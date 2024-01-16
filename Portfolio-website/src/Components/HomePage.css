@@ -1,0 +1,44 @@
+.homePageContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10vh;
+    font-size: 20px;
+  }
+
+.header{
+    text-align: center;
+    font-size: 7vw;
+    margin-bottom: 0px;
+}
+
+.underHeader{
+    text-align: center;
+}
+
+.avatarImg {
+    display: block;
+    margin: 60px auto; /* Center the image horizontally */
+    max-width: 200px; /* Set a max-width to make it a bit smaller */
+    height: auto;
+    margin-top: 60px; /* Adjust the top margin as needed */
+}
+
+.scroll-down-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 20px auto; /* Center the button horizontally */
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-down-button:hover {
+    background-color: #45a049;
+}
