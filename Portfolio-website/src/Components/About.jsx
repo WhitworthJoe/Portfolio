@@ -1,9 +1,10 @@
 import React from "react";
 import "./About.css";
 
-const About = () => {
+const About = ({ isDarkMode }) => {
+  const containerClassName = `aboutContainer ${isDarkMode ? "dark-text" : ""}`;
   return (
-    <div className="aboutContainer">
+    <div id="about" className={containerClassName}>
       <h1 className="aboutHeader">Hi, I'm Joe. It's a pleasure to meet you!</h1>
       <h2 className="aboutParagraph">
         I dove headfirst into the world of software development just six months

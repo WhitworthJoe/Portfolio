@@ -1,0 +1,13 @@
+.footerContainer {
+  background-color: #ffffff;
+  color: #222;
+  padding: 10px;
+  text-align: center;
+  bottom: 0;
+  width: 98.9%;
+}
+
+.footerContainer.dark-text {
+  background-color: #222;
+  color: #e6e6e6;
+}

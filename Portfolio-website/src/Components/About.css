@@ -3,6 +3,10 @@ body{
     font-family: Calibri;
 }
 
+.dark-text {
+    color: #000000; /* Customize the text color for dark mode */
+  }
+
 .app{
     margin: 0;
     padding: 0;
