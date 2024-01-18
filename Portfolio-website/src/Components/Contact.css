@@ -63,6 +63,21 @@
   margin-left: 5px;
 }
 
+.cvContainer{
+  background-color: #fcfcfc;
+  font-weight: bold;
+  color: #222;
+  border-radius: 2rem;
+  padding: 1vh 1vw;
+}
+
+.cvContainer.dark-text{
+  background-color: #222;
+  color: rgb(111, 202, 255);
+  border-radius: 2rem;
+  padding: 1vh 1vw;
+}
+
 @media (max-width: 1095px) {
   .contactContainer {
     flex-direction: column;

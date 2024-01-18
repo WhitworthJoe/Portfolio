@@ -6,6 +6,7 @@ import linkedinIcon from "./Assets/LinkedIn_icon.svg.png";
 
 const Contact = ({ isDarkMode }) => {
   const containerClassName = `contactContainer ${isDarkMode ? "dark-text" : ""}`;
+  const cvContainer = `cvContainer ${isDarkMode ? "dark-text" : ""}`;
 
   return (
     <div id="contact" className={containerClassName}>
@@ -58,6 +59,9 @@ const Contact = ({ isDarkMode }) => {
             )}
           </a>
         </div>
+        <a className="cvButtonLink" href="./src/Components/Assets/JoeWhitworthCV.docx" download="JoeWhitworthCV.docx">
+        <button className={cvContainer}>Download CV</button>
+      </a>
       </div>
     </div>
   );

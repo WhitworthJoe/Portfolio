@@ -39,7 +39,6 @@ const Header = ({isDarkMode, setIsDarkMode}) => {
         <div className="projectsLink" onClick={() => scrollToSection("projects")}>Projects</div>
         <div className="contactLink" onClick={() => scrollToSection("contact")}>Contact</div>
       </div>
-
       <button className="themeButton" onClick={myFunction}>
         {isDarkMode ? <img src={LightTheme} /> : <img src={DarkTheme} />}
       </button>

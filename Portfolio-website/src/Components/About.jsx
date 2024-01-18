@@ -7,16 +7,23 @@ const About = ({ isDarkMode }) => {
     <div id="about" className={containerClassName}>
       <h1 className="aboutHeader">Hi, I'm Joe. It's a pleasure to meet you!</h1>
       <h2 className="aboutParagraph">
-        I dove headfirst into the world of software development just six months
-        ago, taking a daring leap from a career in finance to enroll in the
-        Northcoders bootcamp. This bold journey demanded significant
-        preparation, followed by 13 weeks of immersive learning and hands-on
-        coding. Amid this exhilarating experience, I collaborated with diverse
-        and talented individuals on both individual and team projects. From
-        tackling coding challenges to building real-world applications, my
-        passion for tech and risk-taking spirit fueled this transformative
-        switch. Driven by a deep love for technology and the unwavering belief
-        that this career shift was worth every moment.
+        I took the leap into software development just six
+        months ago, leaving behind a career in finance to enroll in the
+        Northcoders bootcamp. This journey not only demanded
+        significant preparation but also included 13 weeks of immersive learning
+        and hands-on coding. During this experience, I collaborated
+        with diverse and talented individuals on team
+        projects, tackling coding challenges and building real-world
+        applications. One of my notable achievements during this time was
+        building 'Resource Rivals' in just 7 days, where I demonstrated
+        proficiency in Javascript, React, CSS and Socket.IO. This experience solidified
+        my passion for technology and showcased my ability to adapt quickly to
+        new environments. Coming from a finance background, I bring a unique
+        perspective to software development, combining analytical skills with a
+        creative problem-solving mindset. My journey into tech has reinforced my
+        belief that this career shift was worth every moment. I am
+        excited to contribute my skills and continue my learning journey in a
+        dynamic and collaborative tech environment.
       </h2>
       <h2 className="extraAboutParagraph">
         While I'm usually busy crafting epic D&D campaigns as a proud Dungeon
