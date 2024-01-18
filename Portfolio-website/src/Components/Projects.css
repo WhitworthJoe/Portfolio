@@ -16,11 +16,13 @@
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   justify-content: center;
   align-items: center;
 }
+
+
 
 .projectsBox {
   background-color: rgb(111, 202, 255);;
@@ -80,4 +82,34 @@
 .projectsBox:hover h1,
 .projectsBox:hover h2 {
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .projectsContainer {
+    background-color: #f0f0f0;
+    padding: 3vh 15vw;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .projectsBox {
+    background-color: rgb(111, 202, 255);;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 25vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vh;
+    position: relative;
+  }
+
+  .projectsBox h1,
+  .projectsBox h2 {
+    font-size: large;
+  }
 }

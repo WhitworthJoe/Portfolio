@@ -8,6 +8,7 @@ const Projects = ({ isDarkMode }) => {
   const projectsContainerClassName = `projectsContainer ${
     isDarkMode ? "dark-text" : ""
   }`;
+
   const projectsBoxClassName = `projectsBox ${isDarkMode ? "dark-text" : ""}`;
   return (
     <div id="projects" className={projectsContainerClassName}>
@@ -37,8 +38,8 @@ const Projects = ({ isDarkMode }) => {
             <img className="projectImages" src={CrowleysColumn} />
             <h1>Crowley's News Front-End</h1>
             <h2>
-              Dynamic web application designed to deliver news articles with a
-              focus on community interaction.
+              Web application designed to deliver news articles with a focus on
+              community interaction.
             </h2>
           </div>
         </a>

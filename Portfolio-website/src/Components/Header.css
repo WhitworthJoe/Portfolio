@@ -37,18 +37,9 @@ button {
   gap: 4vw;
 }
 
-.homeLink:hover {
-  text-decoration: underline;
-}
-
-.aboutLink:hover {
-  text-decoration: underline;
-}
-
-.projectsLink:hover {
-  text-decoration: underline;
-}
-
+.homeLink:hover,
+.aboutLink:hover,
+.projectsLink:hover,
 .contactLink:hover {
   text-decoration: underline;
 }
@@ -57,4 +48,58 @@ button {
   flex: 0;
   font-size: 50px;
   text-align: center;
+}
+
+.navToggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #555;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.navLinksContainer {
+  display: flex;
+  gap: 4vw;
+}
+
+@media (max-width: 768px) {
+  .navToggle {
+    display: flex;
+  }
+
+  .navLinksContainer {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    color: #222;
+    background-color: rgb(111, 202, 255);;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .navLinksContainer.open {
+    display: flex;
+  }
+
+  .bar.open:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .bar.open:nth-child(2) {
+    opacity: 0;
+  }
+
+  .bar.open:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
 }

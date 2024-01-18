@@ -4,6 +4,8 @@ import LightTheme from "./Assets/LightTheme.png"
 import "./Header.css";
 
 const Header = ({isDarkMode, setIsDarkMode}) => {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
   useEffect(() => {
     document.body.classList.toggle("dark", isDarkMode);
   }, [isDarkMode]);
@@ -19,10 +21,19 @@ const Header = ({isDarkMode, setIsDarkMode}) => {
     }
   };
 
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
   return (
-    <header id="home" className="headerContainer">
+    <header id="home" className={`headerContainer ${isNavOpen ? "nav-open" : ""}`}>
       <div className="logo">JW</div>
-      <div className="pageLinkContainer">
+      <div className="navToggle" onClick={toggleNav}>
+      <div className={`bar ${isNavOpen ? "open" : ""}`}></div>
+      <div className={`bar ${isNavOpen ? "open" : ""}`}></div>
+      <div className={`bar ${isNavOpen ? "open" : ""}`}></div>
+    </div>
+      <div className={`navLinksContainer ${isNavOpen ? "open" : ""}`}>
         <div className="homeLink" onClick={() => scrollToSection("home")}>Home</div>
         <div className="aboutLink" onClick={() => scrollToSection("about")}>About</div>
         <div className="projectsLink" onClick={() => scrollToSection("projects")}>Projects</div>

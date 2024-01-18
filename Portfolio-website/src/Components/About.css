@@ -4,7 +4,7 @@ body{
 }
 
 .dark-text {
-    color: #000000; /* Customize the text color for dark mode */
+    color: #000000;
   }
 
 .app{
@@ -26,9 +26,9 @@ body{
 .aboutParagraph {
     text-align: center;
     font-size: 1.4rem;
-    max-width: 60vw; /* Set a maximum width for the text to improve readability */
-    margin: 0 auto; /* Center the text horizontally */
-    line-height: 1.5; /* Set line height for better readability */
+    max-width: 60vw;
+    margin: 0 auto;
+    line-height: 1.5;
 }
 
 .extraAboutParagraph{
@@ -37,4 +37,22 @@ body{
     max-width: 60vw;
     margin: 10px auto;
     line-height: 1.5
+}
+
+@media (max-width: 1105px) {
+    .aboutParagraph {
+        text-align: left;
+        font-size: 1.4rem;
+        max-width: 80vw; /* Set a maximum width for the text to improve readability */
+        margin: 0 auto; /* Center the text horizontally */
+        line-height: 1.5; /* Set line height for better readability */
+    }
+    
+    .extraAboutParagraph{
+        text-align: left;
+        font-size: 1.4rem;
+        max-width: 80vw;
+        margin: 10px auto;
+        line-height: 1.5
+    }
 }
