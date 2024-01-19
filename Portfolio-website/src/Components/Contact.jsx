@@ -3,6 +3,7 @@ import "./Contact.css";
 import githubIconDark from "./Assets/github-icon.png";
 import githubIconLight from "./Assets/github-icon-light.png";
 import linkedinIcon from "./Assets/LinkedIn_icon.svg.png";
+import joeWhitworthCV from "./Assets/JoeWhitworthCV.pdf"
 
 const Contact = ({ isDarkMode }) => {
   const containerClassName = `contactContainer ${isDarkMode ? "dark-text" : ""}`;
@@ -59,8 +60,8 @@ const Contact = ({ isDarkMode }) => {
             )}
           </a>
         </div>
-        <a className="cvButtonLink" href="./src/Components/Assets/JoeWhitworthCV.docx" download="JoeWhitworthCV.docx">
-        <button className={cvContainer}>Download CV</button>
+        <a className="cvButtonLink" href={joeWhitworthCV} download="JoeWhitworthCV.pdf">
+        <button className={cvContainer}>View CV</button>
       </a>
       </div>
     </div>
